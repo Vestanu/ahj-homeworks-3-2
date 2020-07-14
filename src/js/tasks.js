@@ -73,7 +73,7 @@ export default class WorkTasks {
     const filtrArr = arrData.tasks.filter((item) => {
       const valueLowerCase = value.trim().toLowerCase();
       const trueName = item.name.toLowerCase().includes(valueLowerCase);
-      return trueName || item.pined;
+      return trueName || item.pinned;
     });
     displayForm.redrawTasks(filtrArr);
   }
